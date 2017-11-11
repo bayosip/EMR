@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.babyv20.atha">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true">
+        <activity
+            android:name=".Controller.Activities.SplashScreen"
+            android:theme="@style/AppTheme">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".Controller.Activities.HomeScreen"
+            android:configChanges="layoutDirection|locale"
+            android:label="@string/title_activity_login"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".Controller.Activities.PatientOptionScreen"
+            android:configChanges="layoutDirection|locale"
+            android:label="@string/title_activity_patient_care"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".Controller.Activities.Forms"
+            android:configChanges="layoutDirection|locale"
+            android:label="@string/_demographic"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".Controller.Activities.PatientRegistration"
+            android:configChanges="layoutDirection|locale"
+            android:label="@string/title_activity_patient_registration"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".Controller.Activities.SearchPatient"
+            android:configChanges="layoutDirection|locale"
+            android:label="@string/title_activity_patient_search"
+            android:theme="@style/AppTheme" />
+        <activity android:name=".Controller.Activities.Visit_Details" />
+    </application>
+
+</manifest>

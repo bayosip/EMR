@@ -1,0 +1,288 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name" translatable="false">ATHA</string>
+    <string name="logo_title" translatable="false">Mobile Triage</string>
+    <string name="logo_title2" translatable="false">All Things Health Africa</string>
+    <string name="home_instructions">Please sign in with hospital user ID</string>
+    <string name="buton_text_manage">MANAGE REGISTERED PATIENTS</string>
+    <string name="button_text_view">VIEW HOSPITAL ACTIVITIES</string>
+    <string name="button_text_new">REGISTER NEW PATIENT</string>
+    <string name="new_patient_instructions">Please Enter Patient Details:</string>
+    <string name="log_out">Log Out</string>
+    <string name="exit">Exit</string>
+    <string name="back_to_options">Back to options</string>
+    <string name="button_text_reset">RESET</string>
+    <string name="button_text_register">REGISTER</string>
+    <string name="language" translatable="false">Language</string>
+    <string name="pref_key_language" translatable="false">pref_language</string>
+    <string-array name="languages">
+        <item>English</item>
+        <item>Swahili</item>
+    </string-array>
+
+    <string-array name="demo_list">
+        <item>Who</item>
+        <item>Contact</item>
+        <item>Choices</item>
+        <item>Employer</item>
+        <item>Guardian</item>
+        <item>Insurance</item>
+        <item>Stats</item>
+        <item>Miscellaneous</item>
+    </string-array>
+
+    <string-array name="lng">
+        <item>ENG</item>
+        <item>SW</item>
+    </string-array>
+
+    <string-array name="contact_type">
+        <item>Unassigned</item>
+        <item>Email</item>
+        <item>SMS</item>
+        <item>Voice Call</item>
+    </string-array>
+
+    <string-array name="choice">
+        <item>Unassigned</item>
+        <item>No</item>
+        <item>Yes</item>
+    </string-array>
+
+    <string-array name="religion">
+        <item>Unassigned</item>
+        <item>African Religion</item>
+        <item>Christian-Adventist</item>
+        <item>Christian-Anglican</item>
+        <item>Christian-Baptist</item>
+        <item>Christian-Catholic</item>
+        <item>Christian-Jehovah Witness</item>
+        <item>Christian-Methodist</item>
+        <item>Christian-Pentecostal</item>
+        <item>Christian-Presbyterian</item>
+        <item>Christian-Orthodox</item>
+        <item>Christian-Other</item>
+        <item>Islam</item>
+        <item>Islam-Shiite</item>
+        <item>Islam-Sunni</item>
+        <item>Judaism</item>
+        <item>Non-Religious</item>
+        <item>Occult</item>
+        <item>Spiritualism</item>
+        <item>Traditionalist</item>
+        <item>Other</item>
+    </string-array>
+
+    <string-array name="occupation">
+        <item>Unassigned</item>
+        <item>Architect</item>
+        <item>Banker</item>
+        <item>Carpenter</item>
+        <item>Electrician</item>
+        <item>Doctor</item>
+        <item>Engineer</item>
+        <item>Government Official</item>
+        <item>Journalist</item>
+        <item>Lawyer</item>
+        <item>Lecturer/Teacher</item>
+        <item>Mechanic</item>
+        <item>Mid-Wife</item>
+        <item>Nurse</item>
+        <item>Civil Servant</item>
+        <item>Para-Legal</item>
+        <item>Pilot</item>
+        <item>Plumber</item>
+        <item>Student</item>
+        <item>Unemployed</item>
+        <item>Other</item>
+    </string-array>
+
+    <string-array name="industry">
+        <item>Unassigned</item>
+        <item>Automotive</item>
+        <item>Aviation</item>
+        <item>Contactor</item>
+        <item>Construction</item>
+        <item>Education</item>
+        <item>Engineering</item>
+        <item>Environmental</item>
+        <item>Government</item>
+        <item>HealthCare</item>
+        <item>I.T.</item>
+        <item>Installation</item>
+        <item>Legal</item>
+        <item>Other</item>
+    </string-array>
+
+    <string-array name="titles">
+        <item>Unassigned</item>
+        <item>Dr.</item>
+        <item>Mr.</item>
+        <item>Mrs.</item>
+        <item>Ms.</item>
+    </string-array>
+
+    <string-array name="sex">
+        <item>Unassigned</item>
+        <item>Female</item>
+        <item>Male</item>
+    </string-array>
+
+    <string-array name="relationship">
+        <item>Unassigned</item>
+        <item>Associate</item>
+        <item>Brother</item>
+        <item>Care Giver</item>
+        <item>Child</item>
+        <item>Emergency Contact</item>
+        <item>Employer</item>
+        <item>Extended Family</item>
+        <item>Foster Child</item>
+        <item>Friend</item>
+        <item>Father</item>
+        <item>Foster Parent</item>
+        <item>GrandChild</item>
+        <item>Guardian</item>
+        <item>Manager</item>
+        <item>Mother</item>
+        <item>Other Adult</item>
+        <item>Self</item>
+        <item>Sister</item>
+        <item>Spouse</item>
+        <item>Trainer</item>
+        <item>Ward of Court</item>
+    </string-array>
+
+    <string-array name="marital_status">
+        <item>Unassigned</item>
+        <item>Divorced</item>
+        <item>Domesticated Partner</item>
+        <item>Married</item>
+        <item>Separated</item>
+        <item>Single</item>
+        <item>Widowed</item>
+    </string-array>
+
+    <string-array name="countries">
+        <item>Unassigned</item>
+        <item>Kenya</item>
+        <item>Nigeria</item>
+        <item>South Africa</item>
+    </string-array>
+
+    <string-array name="visit_category">
+        <item>--Select One--</item>
+        <item>Established Patient</item>
+        <item>Health and Behavioural Assements</item>
+        <item>New Patient</item>
+        <item>Office Visit</item>
+        <item>Ophthalmological Services</item>
+        <item>Preventice Care</item>
+        <item>Reserved</item>
+    </string-array>
+
+    <string-array name="sensitivity">
+        <item>Unassigned</item>
+        <item>Low</item>
+        <item>Normal</item>
+        <item>high</item>
+    </string-array>
+
+    <string-array name="med_issues">
+        <item>Allergy</item>
+        <item>Dental</item>
+        <item>Medication</item>
+        <item>Problem</item>
+        <item>Surgery</item>
+    </string-array>
+
+    <string-array name="occurrence">
+        <item>N/A</item>
+        <item>Acute on Chronic</item>
+        <item>Chronic/Recurrent</item>
+        <item>Delayed Occurrence(2+mo)</item>
+        <item>Early Occurrence(0-2mo)</item>
+        <item>First</item>
+        <item>Late Occurrence(2-12mo)</item>
+    </string-array>
+
+    <string-array name="outcome">
+        <item>Unassigned</item>
+        <item>Improved</item>
+        <item>Pending Follow-up</item>
+        <item>Resolved</item>
+        <item>Status Quo</item>
+        <item>Worse</item>
+    </string-array>
+
+    <string name="title_activity_main">MainActivity</string>
+    <string name="action_settings">Settings</string>
+    <string name="section_format">Hello World from section: %1$d</string>
+
+    <string name="title_activity_patient_registration">Patient Registration</string>
+    <string name="patient_search_instructions">Enter Patient Full Name:</string>
+    <string name="_demographic">Patient Demographic</string>
+    <string name="title_activity_patient_care">Patient Care</string>
+    <string name="title_activity_login">Login</string>
+    <string name="title_activity_patient_search">Patient Search</string>
+    <string name="search">Search</string>
+    <string name="search_hint">Please enter patient\'s full name</string>
+    <string name="instruction_contact_choices">Patient Contact Choices:</string>
+    <string name="best_contact">Best Contact:</string>
+    <string name="allow_sms">Allow SMS:</string>
+    <string name="allow_email">Allow Email:</string>
+    <string name="allow_info_exchange">Allow Health Info Exchange:</string>
+    <string name="allow_registry_use">Allow Immunization Registry Use:</string>
+    <string name="street">Street Address</string>
+    <string name="post_code">Post Code</string>
+    <string name="emergency_contact">Emergency Contact</string>
+    <string name="emergency_phone">Emergency phone number</string>
+    <string name="occupation">Occupation:</string>
+    <string name="industry">Industry:</string>
+    <string name="occupation_other">Occupation(other)</string>
+    <string name="industry_other">Industry(Other)</string>
+    <string name="employer">Employer</string>
+    <string name="employer_country">Employer Country:</string>
+    <string name="employer_state">Employer State</string>
+    <string name="employer_postcode">Employer Postcode</string>
+    <string name="employer_address">Employer Address</string>
+    <string name="employer_city">Employer City</string>
+    <string name="patient_employer_information">Patient Employer Information:</string>
+    <string name="guardian_info">Guardian Information:</string>
+    <string name="guardian_name">Guardian Name</string>
+    <string name="relationship">Relationship:</string>
+    <string name="insurance_info">Insurance Information:</string>
+    <string name="insurance_provider">Insurance Provider</string>
+    <string name="scheme_name">Scheme Name</string>
+    <string name="policy_member_name">Policy Member Name</string>
+    <string name="policy_number">Policy Number</string>
+    <string name="policy_valid_from">Policy Valid From</string>
+    <string name="misc_information">Miscellenous Information:</string>
+    <string name="date_deceased">Date Deceased</string>
+    <string name="reason_deceased">Reason Deceased</string>
+    <string name="date_of_birth">Date of birth</string>
+    <string name="first_name">First Name</string>
+    <string name="social_id">Social ID</string>
+    <string name="license_id">License ID</string>
+    <string name="marital_status">Marital Status</string>
+    <string name="comments_billing_note">Comments/Billing Note</string>
+    <string name="registration_instructions">Please Enter Patient Details</string>
+    <string name="register">Register</string>
+    <string name="select_patient_details_to_fill">Select Patient Details To Fill:</string>
+    <string name="patient_medical_issues">Medical Issues:</string>
+    <string name="title_of_medical_issue">Title of Medical Issue</string>
+    <string name="start_date">Start date</string>
+    <string name="end_date">End date</string>
+    <string name="occurance">Occurance:</string>
+    <string name="referred_by">Referred By</string>
+    <string name="outcome">Outcome:</string>
+    <string name="visit_category">Visit Category:</string>
+    <string name="hospital_facility">Hospital Facility</string>
+    <string name="billing_facility">Billing Facility</string>
+    <string name="sensitivity">Sensitivity:</string>
+    <string name="date_of_service">Date of Service</string>
+    <string name="hosp_date_onset">Hosp. Date/Onset</string>
+    <string name="title_activity_patient_details">PatientDetails</string>
+    <string name="choose_option">Please choose one option below:</string>
+    <string name="title_activity_test">test</string>
+</resources>

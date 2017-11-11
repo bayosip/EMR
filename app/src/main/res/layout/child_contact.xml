@@ -1,0 +1,202 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/contactLayout"
+    android:background="@color/colorLogoText"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Patient Contact:"
+        android:textColor="@color/colorText"
+        android:gravity="center"
+        android:id="@+id/textView27"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dp"
+        android:textStyle="normal|bold"
+        android:textSize="20sp" />
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/textView27"
+        android:fillViewport="true">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/input_size"
+        android:inputType="textPersonName"
+        android:background="@color/colorInput"
+        android:hint="@string/street"
+        android:textColorHint="@color/hint_color"
+        android:ems="10"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginTop="16dp"
+        android:id="@+id/editTextStreet"
+        android:textSize="20sp" />
+
+    <Spinner
+        android:layout_width="@dimen/spinner_width"
+        android:layout_height="@dimen/input_size"
+        android:layout_alignTop="@+id/textView5"
+        android:layout_toEndOf="@+id/textView5"
+        android:layout_marginStart="23dp"
+        android:theme="@style/mySpinnerItemStyle"
+        android:background="@color/colorInput"
+        android:entries="@array/countries"
+        android:id="@+id/spinnerCountry"
+        />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/input_size"
+        android:inputType="textPersonName"
+        android:background="@color/colorInput"
+        android:hint="State"
+        android:textColorHint="@color/hint_color"
+        android:ems="10"
+        android:id="@+id/editTextState"
+        android:layout_marginTop="@dimen/appbar_padding"
+        android:textSize="20sp"
+        android:layout_below="@+id/editTextCity"
+        android:layout_alignStart="@+id/editTextCity" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/input_size"
+        android:inputType="textPersonName"
+        android:background="@color/colorInput"
+        android:textColorHint="@color/hint_color"
+        android:hint="City"
+        android:ems="10"
+        android:id="@+id/editTextCity"
+        android:layout_marginTop="@dimen/appbar_padding"
+        android:textSize="20sp"
+        android:layout_below="@+id/editTextStreet"
+        android:layout_alignStart="@+id/editTextStreet"
+        android:layout_alignEnd="@+id/editTextStreet"/>
+
+    <TextView
+        android:text="Country:"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView5"
+        android:layout_marginTop="11dp"
+        android:textSize="20sp"
+        android:textColor="@color/colorText"
+        android:layout_below="@+id/editTextPostCode"
+        android:layout_alignStart="@+id/editTextState" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/input_size"
+        android:inputType="phone"
+        android:ems="10"
+        android:layout_marginTop="@dimen/appbar_padding"
+        android:id="@+id/editTextEmergencyPhone"
+        android:hint="@string/emergency_phone"
+        android:textColorHint="@color/hint_color"
+        android:layout_alignEnd="@+id/editTextStreet"
+        android:background="@color/colorInput"
+        android:textSize="20sp"
+        android:layout_below="@+id/editTextEmergencyName"
+        android:layout_alignStart="@+id/editTextEmergencyName" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/input_size"
+        android:inputType="phone"
+        android:ems="10"
+        android:layout_marginTop="16dp"
+        android:id="@+id/editTextHomePhone"
+        android:hint="Home Phone"
+        android:background="@color/colorInput"
+        android:textSize="20sp"
+        android:layout_below="@+id/editTextEmergencyPhone"
+        android:layout_alignStart="@+id/editTextEmergencyPhone"
+        android:textColorHint="@color/hint_color"/>
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/input_size"
+        android:inputType="phone"
+        android:ems="10"
+        android:id="@+id/editTextMobile"
+        android:hint="Mobile Phone"
+        android:layout_marginRight="10dp"
+        android:background="@color/colorInput"
+        android:textSize="20sp"
+        android:textColorHint="@color/hint_color"
+        android:layout_marginTop="@dimen/appbar_padding"
+        android:layout_toEndOf="@+id/editTextHomePhone"
+        android:layout_alignStart="@+id/editTextPostCode"
+        android:layout_below="@+id/editTextEmergencyPhone"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/input_size"
+        android:inputType="textEmailAddress"
+        android:ems="10"
+        android:layout_alignEnd="@+id/editTextStreet"
+        android:background="@color/colorInput"
+        android:layout_marginTop="16dp"
+        android:id="@+id/editTextEmail"
+        android:hint="Email"
+        android:textColorHint="@color/hint_color"
+        android:layout_below="@+id/editTextMobile"
+        android:layout_alignStart="@+id/editTextHomePhone" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/input_size"
+        android:inputType="textPersonName"
+        android:background="@color/colorInput"
+        android:textColorHint="@color/hint_color"
+        android:hint="@string/post_code"
+        android:ems="10"
+        android:id="@+id/editTextPostCode"
+        android:textSize="20sp"
+        android:layout_alignBaseline="@+id/editTextState"
+        android:layout_alignBottom="@+id/editTextState"
+        android:layout_alignEnd="@+id/editTextCity" />
+
+    <Button
+        android:text="Save"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/button_size"
+        android:layout_below="@+id/editTextEmail"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/appbar_padding"
+        android:layout_marginEnd="@dimen/appbar_padding"
+        android:layout_marginStart="@dimen/appbar_padding"
+        android:id="@+id/buttonSave_contact"
+        android:textSize="20sp"
+        android:theme="@style/myButtonStyle"
+        android:elevation="10dp"
+        android:textStyle="normal|bold"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/input_size"
+        android:inputType="textPersonName"
+        android:background="@color/colorInput"
+        android:hint="@string/emergency_contact"
+        android:textColorHint="@color/hint_color"
+        android:ems="10"
+        android:id="@+id/editTextEmergencyName"
+        android:layout_marginTop="@dimen/appbar_padding"
+        android:textSize="20sp"
+        android:layout_below="@+id/spinnerCountry"
+        android:layout_alignStart="@+id/textView5" />
+        </RelativeLayout>
+    </ScrollView>
+
+</RelativeLayout>

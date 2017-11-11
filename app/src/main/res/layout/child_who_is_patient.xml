@@ -1,0 +1,221 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/whoLayout"
+    android:background="@color/colorLogoText"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+    <ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_below="@+id/textViewWho"
+        android:fillViewport="true">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/scroll1">
+
+        <TextView
+            android:text="Title:"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="20dp"
+            android:id="@+id/textView8"
+            android:textColor="@color/colorText"
+            android:textSize="20sp" />
+
+        <Spinner
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/input_size"
+            android:layout_alignTop="@+id/textView8"
+            android:layout_toEndOf="@+id/textView8"
+            android:layout_marginStart="20dp"
+            android:entries="@array/titles"
+            android:theme="@style/mySpinnerItemStyle"
+            android:background="@color/colorInput"
+            android:id="@+id/spinnerTitle" />
+
+        <TextView
+            android:text="Sex:"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/colorText"
+            android:layout_alignTop="@+id/editTextDOB"
+            android:layout_toEndOf="@+id/editTextDOB"
+            android:layout_marginStart="41dp"
+            android:id="@+id/textView11"
+            android:textSize="20sp" />
+
+        <Spinner
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/input_size"
+            android:background="@color/colorInput"
+            android:layout_alignTop="@+id/textView11"
+            android:layout_toEndOf="@+id/textView11"
+            android:layout_marginStart="14dp"
+            android:id="@+id/spinnerSex"
+            android:entries="@array/sex"
+            android:theme="@style/mySpinnerItemStyle"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/input_size"
+            android:inputType="textPersonName"
+            android:ems="10"
+            android:id="@+id/editTextSn"
+            android:background="@color/colorInput"
+            android:hint="Surname"
+            android:layout_marginEnd="@dimen/appbar_padding"
+            android:layout_marginTop="@dimen/appbar_padding"
+            android:layout_below="@+id/editTextFn"
+            android:layout_alignStart="@+id/editTextFn"
+            android:textSize="20sp"
+            android:textColorHint="@color/hint_color"/>
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/input_size"
+            android:inputType="textPersonName"
+            android:ems="10"
+            android:background="@color/colorInput"
+            android:hint="Initial"
+            android:id="@+id/editTextInitial"
+            android:layout_marginTop="@dimen/appbar_padding"
+            android:layout_below="@+id/editTextSn"
+            android:layout_alignStart="@+id/editTextSn"
+            android:textSize="20sp"
+            android:textColorHint="@color/hint_color"/>
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/input_size"
+            android:inputType="date"
+            android:ems="10"
+            android:background="@color/colorInput"
+            android:hint="@string/date_of_birth"
+            android:id="@+id/editTextDOB"
+            android:layout_below="@+id/editTextInitial"
+            android:layout_alignStart="@+id/editTextInitial"
+            android:layout_marginTop="@dimen/appbar_padding"
+            android:textColorHint="@color/hint_color"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/input_size"
+            android:inputType="textPersonName"
+            android:ems="10"
+            android:id="@+id/editTextFn"
+            android:background="@color/colorInput"
+            android:hint="@string/first_name"
+            android:layout_marginEnd="@dimen/appbar_padding"
+            android:layout_marginTop="25dp"
+            android:layout_below="@+id/textView8"
+            android:layout_alignStart="@+id/textView8"
+            android:textSize="20sp"
+            android:textColorHint="@color/hint_color"/>
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/input_size"
+            android:inputType="textPersonName"
+            android:background="@color/colorInput"
+            android:textSize="20sp"
+            android:textColorHint="@color/hint_color"
+            android:hint="@string/license_id"
+            android:layout_marginRight="@dimen/appbar_padding_top"
+            android:ems="10"
+            android:layout_alignTop="@+id/editTextSocialID"
+            android:layout_alignStart="@+id/textView11"
+            android:id="@+id/editTextLicense" />
+
+        <TextView
+            android:text="@string/marital_status"
+            android:textColor="@color/colorText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/editTextSocialID"
+            android:layout_alignStart="@+id/editTextSocialID"
+            android:layout_marginTop="@dimen/appbar_padding"
+            android:id="@+id/textView3"
+            android:textSize="20sp" />
+
+        <Spinner
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/input_size"
+            android:layout_alignTop="@+id/textView3"
+            android:layout_toEndOf="@+id/textView3"
+            android:layout_marginStart="23dp"
+            android:entries="@array/marital_status"
+            android:background="@color/colorInput"
+            android:id="@+id/spinnerMartialStatus"
+            android:theme="@style/mySpinnerItemStyle"/>
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/input_size"
+            android:inputType="textPersonName"
+            android:background="@color/colorInput"
+            android:hint="@string/social_id"
+            android:layout_marginRight="10dp"
+            android:ems="10"
+            android:layout_marginTop="24dp"
+            android:id="@+id/editTextSocialID"
+            android:layout_below="@+id/editTextDOB"
+            android:layout_alignStart="@+id/editTextDOB"
+            android:layout_marginBottom="10dp"
+            android:textSize="20sp"
+            android:textColorHint="@color/hint_color"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/large_input_size"
+            android:inputType="textPersonName"
+            android:ems="10"
+            android:background="@color/colorInput"
+            android:hint="@string/comments_billing_note"
+            android:layout_marginEnd="@dimen/appbar_padding"
+            android:id="@+id/editTextComments"
+            android:layout_below="@+id/textView3"
+            android:layout_alignStart="@+id/textView3"
+            android:layout_marginTop="@dimen/appbar_padding"
+            android:textSize="20sp"
+            android:textColorHint="@color/hint_color"/>
+
+        <Button
+            android:text="Save"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/button_size"
+            android:layout_below="@+id/editTextComments"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/appbar_padding"
+            android:layout_marginEnd="@dimen/appbar_padding"
+            android:layout_marginStart="@dimen/appbar_padding"
+            android:id="@+id/buttonSave_Who"
+            android:textSize="20sp"
+            android:theme="@style/myButtonStyle"
+            android:elevation="10dp"
+            android:textStyle="normal|bold"/>
+        </RelativeLayout>
+    </ScrollView>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="18dp"
+        android:id="@+id/textViewWho"
+        android:gravity="center"
+        android:textColor="@color/colorText"
+        android:text="Who is Patient:"
+        android:textStyle="normal|bold"
+        android:textSize="25sp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+
+</RelativeLayout>

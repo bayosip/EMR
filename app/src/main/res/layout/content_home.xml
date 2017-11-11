@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".Controller.Activities.HomeScreen"
+    tools:showIn="@layout/activity_home_screen">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="@dimen/appbar_padding">
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_gravity="center"
+        android:layout_marginTop="@dimen/appbar_padding"
+        android:text="MOBILE TRIAGE"
+        android:textColor="@color/colorText"
+        android:textSize="30sp"
+        android:textStyle="normal|bold" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="@string/home_instructions"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="@color/colorText"
+        android:textSize="25dp"
+        android:layout_gravity="center"
+        android:textStyle="normal|bold"
+        android:layout_above="@+id/textView6"
+        android:layout_toEndOf="@+id/textView10"
+        android:layout_marginTop="@dimen/appbar_padding" />
+
+
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/editTextUser"
+        android:layout_alignStart="@+id/editTextUser"
+        android:text="Username:"
+        android:layout_marginTop="@dimen/appbar_padding"
+        android:textColor="@color/colorText"
+        android:textSize="20sp" />
+
+        <EditText
+            android:id="@+id/editTextUser"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/input_size"
+            android:layout_above="@+id/textView9"
+            android:paddingStart="5dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/appbar_padding"
+            android:background="@color/colorInput"
+            android:hint="Username"
+            android:textSize="@dimen/text_size"
+            android:theme="@style/myEditTextStyle" />
+
+
+
+        <TextView
+        android:id="@+id/textView9"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/editTextPass"
+        android:layout_alignStart="@+id/editTextPass"
+        android:layout_marginTop="@dimen/appbar_padding"
+        android:text="Password:"
+        android:textColor="@color/colorText"
+        android:textSize="20sp" />
+
+        <EditText
+            android:id="@+id/editTextPass"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/input_size"
+            android:layout_alignEnd="@+id/editTextUser"
+            android:layout_alignStart="@+id/editTextUser"
+            android:layout_centerVertical="true"
+            android:paddingStart="5dp"
+            android:layout_marginTop="@dimen/appbar_padding"
+            android:background="@color/colorInput"
+            android:ems="10"
+            android:hint="Password"
+            android:inputType="textPassword"
+            android:textSize="@dimen/text_size" />
+
+        <TextView
+            android:id="@+id/textView10"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@+id/editTextPass"
+            android:layout_below="@+id/editTextPass"
+            android:layout_marginTop="@dimen/appbar_padding"
+            android:text="Language:"
+            android:textColor="@color/colorText"
+            android:textSize="20sp" />
+    <Spinner
+        android:id="@+id/spinnerLanguage"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/input_size"
+        android:layout_alignStart="@+id/textView10"
+        android:layout_below="@+id/textView10"
+        android:layout_marginTop="@dimen/appbar_padding"
+        android:background="@color/colorInput"
+        android:entries="@array/languages" />
+
+    <Button
+        android:id="@+id/loginButton"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/button_size"
+        android:layout_alignStart="@+id/spinnerLanguage"
+        android:layout_below="@+id/spinnerLanguage"
+        android:layout_marginEnd="@dimen/appbar_padding"
+        android:layout_marginStart="@dimen/appbar_padding"
+        android:layout_marginTop="25dp"
+        android:elevation="10dp"
+        android:text="Login"
+        android:textSize="30dp"
+        android:textStyle="normal|bold"
+        android:theme="@style/myButtonStyle" />
+
+        </LinearLayout>
+
+</ScrollView>

@@ -1,0 +1,44 @@
+ <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorBackground"
+    android:id="@+id/tabDemo"
+    tools:context="com.example.babyv20.atha.Controller.CheckInNewPatient">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="@string/select_patient_details_to_fill"
+        android:textColor="@color/colorText"
+        android:gravity="center"
+        android:id="@+id/textView6"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="5dp"
+        android:layout_margin="10dp"
+        android:textStyle="normal|bold"
+        android:textSize="20sp" />
+
+    <android.support.v7.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView6"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="10dp"
+        android:id="@+id/patientDemoList"/>
+
+     <TextView
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content"
+         android:layout_margin="@dimen/appbar_padding"
+         android:id="@+id/textViewPatientName_demo"
+         android:text=""
+         android:gravity="center"
+         android:textSize="20sp"
+         android:textStyle="normal|bold"
+         android:textColor="@color/colorText"
+         android:layout_below="@+id/patientDemoList"
+         android:layout_centerHorizontal="true" />
+
+</RelativeLayout>

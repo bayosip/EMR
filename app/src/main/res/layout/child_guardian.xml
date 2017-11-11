@@ -1,0 +1,218 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/colorLogoText"
+    android:id="@+id/guardianLayout"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+
+    <TextView
+        android:text="@string/guardian_info"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="24dp"
+        android:id="@+id/textView31"
+        android:textSize="25sp"
+        android:textStyle="normal|bold"
+        android:textColor="@color/colorText"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/textView31"
+        android:fillViewport="true">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/input_size"
+        android:inputType="textPersonName"
+        android:ems="10"
+        android:paddingStart="5dp"
+        android:layout_marginStart="@dimen/appbar_padding"
+        android:layout_marginTop="@dimen/appbar_padding"
+        android:layout_marginEnd="@dimen/appbar_padding"
+        android:id="@+id/editTextGuardName"
+        android:layout_alignParentStart="true"
+        android:background="@color/colorInput"
+        android:textSize="20sp"
+        android:hint="@string/guardian_name" />
+
+    <TextView
+        android:text="Sex:"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/appbar_padding"
+        android:id="@+id/textView25"
+        android:textSize="20sp"
+        android:textColor="@color/colorText"
+        android:layout_below="@+id/editTextGuardName"
+        android:layout_alignStart="@+id/editTextGuardName" />
+
+    <Spinner
+        android:layout_width="@dimen/spinner_width"
+        android:layout_height="@dimen/input_size"
+        android:layout_alignTop="@+id/textView32"
+        android:layout_toEndOf="@+id/textView32"
+        android:layout_alignBaseline="@+id/textView32"
+        android:layout_marginStart="@dimen/appbar_padding"
+        android:background="@color/colorInput"
+        android:id="@+id/spinnerGuardRelationShip"
+        android:theme="@style/mySpinnerItemStyle"
+        android:entries="@array/relationship"/>
+
+    <Button
+        android:text="Save"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/button_size"
+        android:layout_below="@+id/editTextGuardEmail"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/appbar_padding"
+        android:layout_marginEnd="@dimen/appbar_padding"
+        android:layout_marginStart="@dimen/appbar_padding"
+        android:id="@+id/buttonSave_guardian"
+        android:textSize="20sp"
+        android:theme="@style/myButtonStyle"
+        android:elevation="10dp"
+        android:textStyle="normal|bold"/>
+
+    <Spinner
+        android:layout_width="@dimen/spinner_width"
+        android:layout_height="@dimen/input_size"
+        android:entries="@array/sex"
+        android:layout_marginStart="@dimen/appbar_padding"
+        android:background="@color/colorInput"
+        android:id="@+id/spinnerGuardSex"
+        android:theme="@style/mySpinnerItemStyle"
+        android:layout_alignTop="@+id/textView25"
+        android:layout_toEndOf="@+id/textView25" />
+
+    <TextView
+        android:text="@string/relationship"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView32"
+        android:textSize="20sp"
+        android:textColor="@color/colorText"
+        android:layout_below="@+id/spinnerGuardSex"
+        android:layout_alignStart="@+id/textView25"
+        android:layout_marginTop="@dimen/appbar_padding"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/input_size"
+        android:inputType="textPersonName"
+        android:ems="10"
+        android:background="@color/colorInput"
+        android:layout_below="@+id/spinnerGuardRelationShip"
+        android:layout_alignStart="@+id/textView32"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="@dimen/appbar_padding"
+        android:id="@+id/editTextGuardStreet"
+        android:textSize="20sp"
+        android:paddingStart="5dp"
+        android:hint="@string/street" />
+
+    <Spinner
+        android:layout_width="@dimen/spinner_width"
+        android:layout_height="@dimen/input_size"
+        android:layout_alignTop="@+id/textView33"
+        android:layout_toEndOf="@+id/textView33"
+        android:background="@color/colorInput"
+        android:entries="@array/countries"
+        android:theme="@style/mySpinnerItemStyle"
+        android:layout_marginStart="@dimen/appbar_padding"
+        android:id="@+id/spinnerGuardCountry" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/input_size"
+        android:inputType="number"
+        android:ems="10"
+        android:background="@color/colorInput"
+        android:id="@+id/editTextGuardPhone"
+        android:hint="Phone"
+        android:paddingStart="5dp"
+        android:layout_below="@+id/spinnerGuardCountry"
+        android:textSize="20sp"
+        android:layout_centerVertical="true"
+        android:layout_alignStart="@+id/textView33"
+        android:layout_marginTop="@dimen/appbar_padding"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/input_size"
+        android:inputType="textEmailAddress"
+        android:ems="10"
+        android:background="@color/colorInput"
+        android:layout_marginTop="@dimen/appbar_padding"
+        android:layout_marginEnd="@dimen/appbar_padding"
+        android:id="@+id/editTextGuardEmail"
+        android:hint="Email"
+        android:paddingStart="5dp"
+        android:textSize="20sp"
+        android:layout_below="@+id/editTextGuardPhone"
+        android:layout_alignStart="@+id/editTextGuardPhone" />
+
+    <TextView
+        android:text="Country:"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="14dp"
+        android:id="@+id/textView33"
+        android:textSize="20sp"
+        android:textColor="@color/colorText"
+        android:layout_below="@+id/editTextGuardCity"
+        android:layout_alignStart="@+id/editTextGuardCity" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/input_size"
+        android:inputType="textPersonName"
+        android:ems="10"
+        android:background="@color/colorInput"
+        android:id="@+id/editTextGuardCity"
+        android:layout_below="@+id/editTextGuardState"
+        android:layout_alignStart="@+id/editTextGuardState"
+        android:layout_marginTop="17dp"
+        android:hint="State"
+        android:paddingStart="5dp"/>
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/input_size"
+        android:inputType="textPersonName"
+        android:ems="10"
+        android:background="@color/colorInput"
+        android:layout_marginStart="16dp"
+        android:id="@+id/editTextGuardPostCode"
+        android:hint="@string/post_code"
+        android:textSize="20sp"
+        android:paddingStart="5dp"
+        android:layout_alignTop="@+id/editTextGuardCity"
+        android:layout_toEndOf="@+id/spinnerGuardRelationShip" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/input_size"
+        android:inputType="textPersonName"
+        android:ems="10"
+        android:background="@color/colorInput"
+        android:layout_marginTop="14dp"
+        android:id="@+id/editTextGuardState"
+        android:hint="City"
+        android:paddingStart="5dp"
+        android:textSize="20sp"
+        android:layout_below="@+id/editTextGuardStreet"
+        android:layout_alignStart="@+id/editTextGuardStreet" />
+
+        </RelativeLayout>
+    </ScrollView>
+
+</RelativeLayout>

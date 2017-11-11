@@ -1,0 +1,43 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="AppTheme.Splash">
+
+    </style>
+
+    <style name="AppTheme.Splash" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <style name="AppTheme.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <style name="AppTheme.AppBarOverlay" parent="android:ThemeOverlay.Material.Dark.ActionBar" />
+
+    <style name="AppTheme.PopupOverlay" parent="android:ThemeOverlay.Material.Light" />
+
+    <style name="mySpinnerItemStyle" parent="@android:style/Widget.Holo.DropDownItem.Spinner">
+        <item name="android:textColor">@color/my_spinner_text_color</item>
+    </style>
+
+    <style name="mySpinnerItemStyle_appbar" parent="@android:style/Widget.Holo.DropDownItem.Spinner">
+        <item name="android:textColor">@color/colorLogoText</item>
+    </style>
+
+    <style name="myButtonStyle" parent="@style/Widget.AppCompat.Button">
+        <item name="android:textColor">@color/colorLogoText</item>
+        <item name="android:colorButtonNormal">@color/button_color</item>
+    </style>
+
+    <style name="myEditTextStyle" parent="@style/Widget.AppCompat.EditText">
+        <item name="android:textColor">@color/colorText</item>
+        <item name="android:textColorHint">@color/hint_color</item>
+    </style>
+
+</resources>

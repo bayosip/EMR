@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/choiceLayout"
+    android:background="@color/colorLogoText"
+    android:fillViewport="true"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="@string/instruction_contact_choices"
+        android:textColor="@color/colorText"
+        android:gravity="center"
+        android:id="@+id/textView26"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="5dp"
+        android:layout_margin="10dp"
+        android:textStyle="normal|bold"
+        android:textSize="20sp" />
+    <TextView
+        android:text="@string/best_contact"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="40dp"
+        android:id="@+id/textView14"
+        android:textSize="20sp"
+        android:textColor="@color/colorText" />
+
+    <Spinner
+        android:layout_width="@dimen/spinner_width"
+        android:layout_height="@dimen/input_size"
+        android:layout_alignTop="@+id/textView14"
+        android:layout_marginStart="20dp"
+        android:background="@color/colorInput"
+        android:theme="@style/mySpinnerItemStyle"
+        android:entries="@array/contact_type"
+        android:id="@+id/spinnerBestContact"
+        android:layout_toEndOf="@+id/textView14"
+        android:layout_marginEnd="10dp"/>
+
+    <TextView
+        android:text="@string/allow_sms"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/spinnerBestContact"
+        android:layout_alignStart="@+id/textView14"
+        android:layout_marginTop="40dp"
+        android:id="@+id/textView18"
+        android:textSize="20sp"
+        android:textColor="@color/colorText" />
+    <Spinner
+        android:layout_width="@dimen/spinner_width"
+        android:layout_height="@dimen/input_size"
+        android:background="@color/colorInput"
+        android:theme="@style/mySpinnerItemStyle"
+        android:id="@+id/spinnerSMS"
+        android:layout_marginStart="20dp"
+        android:layout_toEndOf="@id/textView18"
+        android:entries="@array/choice"
+        android:layout_above="@+id/textView19" />
+
+    <TextView
+        android:text="@string/allow_email"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView18"
+        android:layout_alignStart="@+id/textView18"
+        android:layout_marginTop="40dp"
+        android:id="@+id/textView19"
+        android:textSize="20sp"
+        android:textColor="@color/colorText"/>
+
+    <Spinner
+        android:layout_width="@dimen/spinner_width"
+        android:layout_height="@dimen/input_size"
+        android:background="@color/colorInput"
+        android:id="@+id/spinnerAllowEmail"
+        android:layout_above="@+id/textView20"
+        android:theme="@style/mySpinnerItemStyle"
+        android:entries="@array/choice"
+        android:layout_marginStart="20dp"
+        android:layout_toEndOf="@+id/textView19"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView19"
+        android:layout_alignStart="@+id/textView19"
+        android:layout_marginTop="40dp"
+        android:id="@+id/textView20"
+        android:text="@string/allow_info_exchange"
+        android:textColor="@color/colorText"
+        android:textSize="20sp" />
+    <Spinner
+        android:layout_width="@dimen/spinner_width"
+        android:layout_height="@dimen/input_size"
+        android:background="@color/colorInput"
+        android:entries="@array/choice"
+        android:theme="@style/mySpinnerItemStyle"
+        android:layout_toEndOf="@+id/textView20"
+        android:layout_alignTop="@+id/textView20"
+        android:layout_marginStart="@dimen/appbar_padding"
+        android:id="@+id/spinnerInfoEx"
+        />
+
+    <TextView
+        android:text="@string/allow_registry_use"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/input_size"
+        android:layout_below="@+id/textView20"
+        android:layout_alignStart="@+id/textView20"
+        android:layout_marginTop="40dp"
+        android:id="@+id/textView21"
+        android:textColor="@color/colorText"
+        android:textSize="20sp" />
+
+
+    <Spinner
+        android:layout_width="@dimen/spinner_width"
+        android:layout_height="@dimen/input_size"
+        android:id="@+id/spinnerImmRegUSe"
+        android:background="@color/colorInput"
+        android:entries="@array/choice"
+        android:theme="@style/mySpinnerItemStyle"
+        android:layout_marginStart="@dimen/appbar_padding"
+        android:layout_alignTop="@+id/textView21"
+        android:layout_toEndOf="@+id/textView21"
+        android:layout_marginBottom="10dp"/>
+
+    <Button
+        android:text="Save"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/button_size"
+        android:layout_marginTop="16dp"
+        android:id="@+id/buttonSave_choice"
+        android:textSize="20sp"
+        android:theme="@style/myButtonStyle"
+        android:elevation="10dp"
+        android:layout_marginEnd="@dimen/appbar_padding"
+        android:layout_marginStart="@dimen/appbar_padding"
+        android:textStyle="normal|bold"
+        android:layout_below="@+id/spinnerImmRegUSe"
+        android:layout_centerHorizontal="true" />
+
+</RelativeLayout>

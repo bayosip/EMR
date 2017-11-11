@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.Toolbar
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:minHeight="@dimen/abc_action_bar_default_height_material"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@color/colorPrimary"
+    android:paddingTop="@dimen/appbar_padding_top"
+    android:paddingBottom="@dimen/appbar_padding_top"
+    android:elevation="5dp"
+    tools:ignore="PrivateResource">
+
+    <ImageView
+        android:layout_width="@dimen/icon_size"
+        android:layout_height="@dimen/icon_size"
+        android:src="@drawable/toolbar_logo"/>
+
+    <Spinner
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/input_size"
+        android:theme="@style/mySpinnerItemStyle_appbar"
+        android:layout_marginStart="@dimen/tb_spinner_margin"
+        android:entries="@array/lng"
+        android:id="@+id/spinnerToolLng"/>
+
+
+</android.support.v7.widget.Toolbar>

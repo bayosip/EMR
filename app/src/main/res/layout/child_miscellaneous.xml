@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/miscLayout"
+    android:background="@color/colorLogoText"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+    <TextView
+        android:text="@string/misc_information"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/appbar_padding"
+        android:id="@+id/textView29"
+        android:textStyle="normal|bold"
+        android:textSize="25sp"
+        android:textColor="@color/colorText"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/input_size"
+        android:inputType="date"
+        android:ems="10"
+        android:background="@color/colorInput"
+        android:textColorHint="@color/hint_color"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="@dimen/appbar_padding"
+        android:layout_marginTop="@dimen/appbar_padding"
+        android:id="@+id/editTextDeceased"
+        android:hint="@string/date_deceased"
+        android:layout_below="@id/textView29"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/large_input_size"
+        android:inputType="text|textShortMessage|textLongMessage"
+        android:background="@color/colorInput"
+        android:textColorHint="@color/hint_color"
+        android:textAlignment="textStart"
+        android:ems="10"
+        android:layout_below="@+id/editTextDeceased"
+        android:layout_alignStart="@+id/editTextDeceased"
+        android:layout_marginTop="29dp"
+        android:id="@+id/editTextReasonDeceased"
+        android:hint="@string/reason_deceased"
+        android:layout_marginRight="@dimen/appbar_padding"
+        android:layout_marginBottom="10dp"/>
+
+    <Button
+        android:text="Save"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/button_size"
+        android:layout_below="@+id/editTextReasonDeceased"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/appbar_padding"
+        android:layout_marginEnd="@dimen/appbar_padding"
+        android:layout_marginStart="@dimen/appbar_padding"
+        android:id="@+id/buttonSave_misc"
+        android:textSize="20sp"
+        android:theme="@style/myButtonStyle"
+        android:elevation="10dp"
+        android:textStyle="normal|bold"/>
+</RelativeLayout>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">ATHA</string>
+    <string name="back_to_options">Nyuma ya Chaguzi</string>
+    <string name="buton_text_manage">Kusimamia wagonjwa waliojiandikisha</string>
+    <string name="button_text_new">Kusajili mgonjwa mpya</string>
+    <string name="home_instructions">Tafadhali ingia na hospitali user ID</string>
+    <string name="button_text_register">Kusajili</string>
+    <string name="button_text_reset">Upya</string>
+    <string name="new_patient_instructions">Tafadhali kuingia Maelezo Mgonjwa</string>
+    <string name="log_out">Kuingia Nje</string>
+    <string name="button_text_view">Shughuli View Hospitali</string>
+    <string name="exit">Utgång</string>
+</resources>

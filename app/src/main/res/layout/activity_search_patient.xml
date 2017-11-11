@@ -1,0 +1,32 @@
+<android.support.design.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorBackground"
+    tools:context="com.example.babyv20.atha.Controller.Activities.SearchPatient">
+
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/AppTheme">
+    <include
+        android:id="@+id/app_bar"
+        layout="@layout/app_bar_general" />
+    </android.support.design.widget.AppBarLayout>
+
+    <include layout="@layout/content_search"/>
+    <!--
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/searchButton"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="95dp"
+            android:text="@string/patient_search_instructions"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textSize="25sp"
+            android:textStyle="normal|bold" /> -->
+</android.support.design.widget.CoordinatorLayout>

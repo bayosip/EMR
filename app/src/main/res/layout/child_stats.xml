@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/colorLogoText"
+    android:id="@+id/statsLayout"
+    android:fillViewport="true"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+    <TextView
+        android:text="Patient Status"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/appbar_padding"
+        android:id="@+id/textView30"
+        android:textStyle="normal|bold"
+        android:textSize="25sp"
+        android:textColor="@color/colorText"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:text="Language:"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="@dimen/appbar_padding"
+        android:layout_marginTop="@dimen/appbar_padding"
+        android:id="@+id/textView13"
+        android:textColor="@color/colorText"
+        android:textSize="20sp"
+        android:layout_below="@id/textView30"/>
+
+    <Spinner
+        android:layout_width="@dimen/spinner_width"
+        android:layout_height="@dimen/input_size"
+        android:background="@color/colorInput"
+        android:layout_alignTop="@+id/textView13"
+        android:layout_toEndOf="@+id/textView13"
+        android:layout_marginStart="20dp"
+        android:theme="@style/mySpinnerItemStyle"
+        android:entries="@array/languages"
+        android:id="@+id/spinnerLanguage" />
+
+    <TextView
+        android:text="Nationality:"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/spinnerLanguage"
+        android:layout_alignStart="@+id/textView13"
+        android:layout_marginTop="@dimen/appbar_padding"
+        android:id="@+id/textView15"
+        android:textSize="20sp"
+        android:textColor="@color/colorText" />
+
+    <Spinner
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/input_size"
+        android:theme="@style/mySpinnerItemStyle"
+        android:background="@color/colorInput"
+        android:layout_alignTop="@+id/textView15"
+        android:layout_alignStart="@+id/spinnerLanguage"
+        android:entries="@array/countries"
+        android:id="@+id/spinnerNationality"
+        android:layout_marginEnd="@dimen/appbar_padding"/>
+
+    <TextView
+        android:text="Religion:"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/spinnerNationality"
+        android:layout_alignStart="@+id/textView15"
+        android:layout_marginTop="@dimen/appbar_padding"
+        android:id="@+id/textView17"
+        android:textSize="20sp"
+        android:textColor="@color/colorText" />
+
+    <Spinner
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/input_size"
+        android:layout_alignTop="@+id/textView17"
+        android:layout_toEndOf="@+id/textView13"
+        android:background="@color/colorInput"
+        android:entries="@array/religion"
+        android:id="@+id/spinnerReligion"
+        android:theme="@style/mySpinnerItemStyle"
+        android:layout_marginEnd="@dimen/appbar_padding"
+        android:layout_alignStart="@+id/spinnerLanguage"
+        android:layout_marginBottom="10dp"/>
+
+    <Button
+        android:text="Save"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/button_size"
+        android:layout_below="@+id/spinnerReligion"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/appbar_padding"
+        android:layout_marginEnd="@dimen/appbar_padding"
+        android:layout_marginStart="@dimen/appbar_padding"
+        android:id="@+id/buttonSave_stats"
+        android:textSize="20sp"
+        android:theme="@style/myButtonStyle"
+        android:elevation="10dp"
+        android:textStyle="normal|bold"/>
+
+</RelativeLayout>
